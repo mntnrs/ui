@@ -43,6 +43,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "bolt": "^0.20.6",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
     "palx": "^1.0.3",
