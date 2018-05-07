@@ -1,0 +1,51 @@
+{
+  "name": "@mntnrs/ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "User Interfaces for MTNTR.Systems",
+  "main": "index.js",
+  "license": "MIT",
+  "bolt": {
+    "workspaces": [
+      "packages/*",
+      "ui/*"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --parser flow --write",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --parser json --write",
+      "git add"
+    ],
+    "*.{graphql,gql}": [
+      "prettier --parser graphql --write",
+      "git add"
+    ],
+    "*.{md,markdown}": [
+      "prettier --parser markdown --write",
+      "git add"
+    ],
+    "*.{css,scss}": [
+      "prettier --parser css --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.5",
+    "palx": "^1.0.3",
+    "prettier": "^1.12.0"
+  }
+}
