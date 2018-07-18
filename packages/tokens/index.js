@@ -1,12 +1,12 @@
 // Semantic theme based on the raw values
-
+import * as rawColor from "./raw/colors";
 // breakpoint values
 export const breakpoints = ["40em", "52em", "64em"];
 
 export const colors = {
-  text: gray[2],
+  text: rawColor.gray[2],
   // background are "levels" of content. lighter backgrounds are "closer to the user" than darker ones
-  backgrounds: [gray[9], gray[7], gray[5]]
+  backgrounds: [rawColor.gray[9], rawColor.gray[7], rawColor.gray[5]]
 };
 
 // space is used for margin and padding scales

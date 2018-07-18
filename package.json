@@ -12,7 +12,9 @@
     ]
   },
   "scripts": {
-    "precommit": "lint-staged"
+    "test": "jest",
+    "precommit": "lint-staged",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -37,16 +39,30 @@
     ]
   },
   "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "emotion": "^9.1.3",
+    "emotion-theming": "^9.1.2",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "react-emotion": "^9.1.3",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.46",
+    "@storybook/react": "^4.0.0-alpha.4",
+    "babel-jest": "^22.4.3",
     "bolt": "^0.20.6",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
     "palx": "^1.0.3",
-    "prettier": "^1.12.0"
+    "prettier": "^1.12.0",
+    "storybook-react": "^3.2.16"
   }
 }
