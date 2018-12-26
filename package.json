@@ -5,64 +5,32 @@
   "description": "User Interfaces for MTNTR.Systems",
   "main": "index.js",
   "license": "MIT",
-  "bolt": {
-    "workspaces": [
-      "packages/*",
-      "ui/*"
-    ]
-  },
+  "workspaces": ["packages/*", "ui/*"],
   "scripts": {
     "test": "jest",
-    "precommit": "lint-staged",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --parser flow --write",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --parser json --write",
-      "git add"
-    ],
-    "*.{graphql,gql}": [
-      "prettier --parser graphql --write",
-      "git add"
-    ],
-    "*.{md,markdown}": [
-      "prettier --parser markdown --write",
-      "git add"
-    ],
-    "*.{css,scss}": [
-      "prettier --parser css --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "babel-core": "^7.0.0-bridge.0",
-    "emotion": "^9.1.3",
-    "emotion-theming": "^9.1.2",
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-emotion": "^9.1.3",
-    "react-helmet": "^5.2.0"
+    "*.{js,jsx}": ["prettier --parser babylon --write", "git add"],
+    "*.json": ["prettier --parser json --write", "git add"],
+    "*.{graphql,gql}": ["prettier --parser graphql --write", "git add"],
+    "*.{md,markdown}": ["prettier --parser markdown --write", "git add"],
+    "*.{mdx}": ["prettier --parser mdx --write", "git add"],
+    "*.{css,scss}": ["prettier --parser css --write", "git add"],
+    "*.{yaml,yml}": ["prettier --parser yaml --write", "git add"]
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/plugin-proposal-do-expressions": "^7.0.0-beta.46",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.46",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "@babel/preset-react": "^7.0.0-beta.46",
-    "@storybook/react": "^4.0.0-alpha.4",
-    "babel-jest": "^22.4.3",
-    "bolt": "^0.20.6",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.5",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-do-expressions": "^7.2.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^23.6.0",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
     "palx": "^1.0.3",
-    "prettier": "^1.12.0",
-    "storybook-react": "^3.2.16"
+    "prettier": "^1.15.3"
   }
 }
