@@ -13,6 +13,7 @@ module.exports = {
         defaultLayouts: { default: path.resolve("./src/components/layout.js") }
       }
     },
+    "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
