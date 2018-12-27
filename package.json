@@ -5,60 +5,26 @@
   "description": "User Interfaces for MTNTR.Systems",
   "main": "index.js",
   "license": "MIT",
-  "workspaces": [
-    "packages/*",
-    "ui/*"
-  ],
+  "workspaces": ["packages/*", "ui/*"],
   "scripts": {
     "test": "jest",
     "precommit": "lint-staged",
-    "clean": "rimraf **/node_modules"
+    "clean": "rm -rf **/*/(node_modules|.cache)"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --parser babylon --write",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --parser json --write",
-      "git add"
-    ],
-    "*.{graphql,gql}": [
-      "prettier --parser graphql --write",
-      "git add"
-    ],
-    "*.{md,markdown}": [
-      "prettier --parser markdown --write",
-      "git add"
-    ],
-    "*.{mdx}": [
-      "prettier --parser mdx --write",
-      "git add"
-    ],
-    "*.{css,scss}": [
-      "prettier --parser css --write",
-      "git add"
-    ],
-    "*.{yaml,yml}": [
-      "prettier --parser yaml --write",
-      "git add"
-    ]
+    "*.{js,jsx}": ["prettier --parser babylon --write", "git add"],
+    "*.json": ["prettier --parser json --write", "git add"],
+    "*.{graphql,gql}": ["prettier --parser graphql --write", "git add"],
+    "*.{md,markdown}": ["prettier --parser markdown --write", "git add"],
+    "*.{mdx}": ["prettier --parser mdx --write", "git add"],
+    "*.{css,scss}": ["prettier --parser css --write", "git add"],
+    "*.{yaml,yml}": ["prettier --parser yaml --write", "git add"]
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-do-expressions": "^7.2.0",
-    "@babel/plugin-proposal-export-default-from": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^23.6.0",
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "palx": "^1.0.3",
-    "prettier": "^1.15.3"
-  },
-  "dependencies": {
+    "prettier": "^1.15.3",
     "rimraf": "^2.6.2"
   }
 }

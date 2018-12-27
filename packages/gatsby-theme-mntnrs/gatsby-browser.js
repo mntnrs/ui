@@ -1,3 +1,3 @@
-import { wrapRootElement } from "./wrap-root-element";
+import { wrapRootElement as wrap } from "./wrap-root-element";
 
-export const wrapRootElement = wrapRootElement;
+export const wrapRootElement = wrap;

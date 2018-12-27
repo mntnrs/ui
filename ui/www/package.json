@@ -7,6 +7,7 @@
     "@emotion/core": "^10.0.5",
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
+    "@mntnrs/hooks": "*",
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",
     "gatsby-mdx": "0.3.1-ci.225",
@@ -14,14 +15,12 @@
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-theme-mntnrs": "*",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2",
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2",
     "react-helmet": "^5.2.0",
     "react-kawaii": "^0.8.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -29,9 +28,6 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "prettier": "^1.15.2"
   },
   "repository": {
     "type": "git",

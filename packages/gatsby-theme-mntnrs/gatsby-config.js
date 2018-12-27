@@ -3,7 +3,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
-        google: {
+        custom: {
           families: ["Inter UI"],
           urls: ["/font-files/inter-ui.css"]
         }
