@@ -5,19 +5,44 @@
   "description": "User Interfaces for MTNTR.Systems",
   "main": "index.js",
   "license": "MIT",
-  "workspaces": ["packages/*", "ui/*"],
+  "workspaces": [
+    "packages/*",
+    "ui/*"
+  ],
   "scripts": {
     "test": "jest",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "clean": "rimraf **/node_modules"
   },
   "lint-staged": {
-    "*.{js,jsx}": ["prettier --parser babylon --write", "git add"],
-    "*.json": ["prettier --parser json --write", "git add"],
-    "*.{graphql,gql}": ["prettier --parser graphql --write", "git add"],
-    "*.{md,markdown}": ["prettier --parser markdown --write", "git add"],
-    "*.{mdx}": ["prettier --parser mdx --write", "git add"],
-    "*.{css,scss}": ["prettier --parser css --write", "git add"],
-    "*.{yaml,yml}": ["prettier --parser yaml --write", "git add"]
+    "*.{js,jsx}": [
+      "prettier --parser babylon --write",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --parser json --write",
+      "git add"
+    ],
+    "*.{graphql,gql}": [
+      "prettier --parser graphql --write",
+      "git add"
+    ],
+    "*.{md,markdown}": [
+      "prettier --parser markdown --write",
+      "git add"
+    ],
+    "*.{mdx}": [
+      "prettier --parser mdx --write",
+      "git add"
+    ],
+    "*.{css,scss}": [
+      "prettier --parser css --write",
+      "git add"
+    ],
+    "*.{yaml,yml}": [
+      "prettier --parser yaml --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -32,5 +57,8 @@
     "lint-staged": "^8.1.0",
     "palx": "^1.0.3",
     "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "www",
-  "description": "www.mntnr.systems",
+  "name": "app",
+  "description": "app.mntnr.systems",
   "version": "1.0.0",
   "author": "Chris Biscardi <chris@christopherbiscardi.com>",
   "dependencies": {
